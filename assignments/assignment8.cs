@@ -13,7 +13,7 @@ public class assignment8 : MonoBehaviour
         Random random_nber = new Random();
         while (true)
         {
-            int n = (int)random_nber.Next(1, 21);
+            int n = random_nber.Next(1, 21);
             if (n == 5)
             {
                 continue;
@@ -39,7 +39,8 @@ public class assignment8 : MonoBehaviour
             int index = random_2.Next(words.Length);
             funnySentence += words[index] + " ";
             i++;
-            Debug.Log(funnySentence + ".");
+           
         }
+         Debug.Log(funnySentence + ".");
     }
 }
