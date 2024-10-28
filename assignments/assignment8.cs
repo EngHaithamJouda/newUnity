@@ -29,13 +29,13 @@ public class assignment8 : MonoBehaviour
             string[] words = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
             Random random_2 = new System.Random();
             string funnySentence;
-            sbyte counter = 0;
+            sbyte i = 0;
 
-            while (counter < 7)
+            while (i < 7)
             {
                 sbyte index = (sbyte)random_2.Next(words.Length);
                 funnySentence += words[index] + " ";
-                counter++;
+                i++;
             }
 
             Debug.Log(funnySentence + ".");
