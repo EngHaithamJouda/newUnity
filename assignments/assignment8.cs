@@ -33,9 +33,6 @@ public class assignment8 : MonoBehaviour
 
         while (i < 7)
         {
-            int index = random_2.Next(w.Length);
-            funnySentence += w[index] + " ";
-            counter++;
             int index = random_2.Next(words.Length);
             funnySentence += words[index] + " ";
             i++;
