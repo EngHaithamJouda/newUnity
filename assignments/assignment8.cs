@@ -13,7 +13,7 @@ public class assignment8 : MonoBehaviour
         Random random_nber = new Random();
         while (true)
         {
-            sbyte n = (sbyte)random_nber.Next(1, 21);
+            int n = (int)random_nber.Next(1, 21);
             if (n == 5)
             {
                 continue;
@@ -23,24 +23,23 @@ public class assignment8 : MonoBehaviour
             {
                 break;
             }
+        }
+        //ex_2
+        //===========================================
+        string[] w = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
+        Random random_2 = new System.Random();
+        string funnySentence;
+        int i = 0;
 
-            //ex_2
-            //===========================================
-            string[] words = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
-            Random random_2 = new System.Random();
-            string funnySentence;
-            sbyte i = 0;
-
-            while (i < 7)
-            {
-                sbyte index = (sbyte)random_2.Next(words.Length);
-                funnySentence += words[index] + " ";
-                i++;
-            }
-
+        while (i < 7)
+        {
+            int index = random_2.Next(w.Length);
+            funnySentence += w[index] + " ";
+            counter++;
+            int index = random_2.Next(words.Length);
+            funnySentence += words[index] + " ";
+            i++;
             Debug.Log(funnySentence + ".");
         }
     }
 }
-
-
