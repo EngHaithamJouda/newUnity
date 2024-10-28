@@ -10,16 +10,16 @@ public class assignment8 : MonoBehaviour
     {
         // ex_1
         //======================================
-        Random random_number = new Random();
+        Random random_nber = new Random();
         while (true)
         {
-            sbyte num = (sbyte)random_number.Next(1, 21);
-            if (num == 5)
+            sbyte n = (sbyte)random_nber.Next(1, 21);
+            if (n == 5)
             {
                 continue;
             }
-            Debug.Log(num);
-            if (num == 15)
+            Debug.Log(n);
+            if (n == 15)
             {
                 break;
             }
@@ -27,18 +27,18 @@ public class assignment8 : MonoBehaviour
             //ex_2
             //===========================================
             string[] words = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
-            Random rand = new System.Random();
-            string sentence = "";
+            Random random_2 = new System.Random();
+            string funnySentence;
             sbyte counter = 0;
 
             while (counter < 7)
             {
-                sbyte index = (sbyte)rand.Next(words.Length);
-                sentence += words[index] + " ";
+                sbyte index = (sbyte)random_2.Next(words.Length);
+                funnySentence += words[index] + " ";
                 counter++;
             }
 
-            Console.WriteLine(sentence.Trim());
+            Debug.Log(funnySentence + ".");
         }
     }
 }
