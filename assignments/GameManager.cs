@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     {
         player p_1 = new player();
         player p_2 = new player();
-        player p_3 = new player();
-
         p_1.InitializePlayer("haitham", 150);
         p_2.InitializePlayer("player2", 60);
         Debug.Log("player1 name " + p_1.playerName);
