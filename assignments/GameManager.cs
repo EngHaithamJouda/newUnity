@@ -25,10 +25,10 @@ public class GameManager : MonoBehaviour
         // Debug.Log("player 2 after full Restore");
         // p_2.heal(true);
         // player.ShowPlayerCount();
-        Player1 player = new Player1("Haitham", -100);
-        Enemy enemy = new Enemy("Unity", -50);
-        player.Heal(-10);
-        enemy.Attack(player, -100);
+        Player1 player = new Player1("Haitham", 100);
+        Enemy enemy = new Enemy("Unity", 100);
+        enemy.Attack(player, 70);
+        player.Heal(50);
     }
 
     // Update is called once per frame
