@@ -17,7 +17,7 @@ public class Character
     public int Health
     {
         get { return health; }
-        set { health = Mathf.Clamp(value, 0, 100); } // استخدم Mathf.Clamp لـ Unity
+        set { health = Mathf.Clamp(value, 0, 100); } // انخنقت لحد ما جبتك 
     }
 
     public Character(string name, int health)
