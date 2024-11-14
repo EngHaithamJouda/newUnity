@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Assignment16
 {
-    public class Position
+    public struct Position
     {
         public float x, y, z;
 
@@ -18,4 +18,4 @@ namespace Assignment16
             Debug.Log($"Position - X: {x}, Y: {y}, Z: {z}");
         }
     }
-}
+}   
